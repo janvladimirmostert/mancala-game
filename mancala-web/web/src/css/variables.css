@@ -1,0 +1,22 @@
+:root {
+
+    --color-dark: #36454f;
+    --color-light: white;
+
+    --color-primary-text: #03031a;
+    --color-primary-background: rgb(240, 246, 255);
+    --color-primary-highlight: 0000a4;
+
+    --color-background-bol-dot-com: #0000a4;
+
+    --radius: 0.25rem;
+    --padding: 0.25rem;
+    --margin: 0.25rem;
+
+    --button-background-color: #00f;
+    --button-background-color-hover: #3c3eff;
+    --button-text-color: white;
+
+
+
+}

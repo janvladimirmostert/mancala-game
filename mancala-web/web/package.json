@@ -1,0 +1,24 @@
+{
+	"name": "mancala-web",
+	"version": "1.0.0",
+	"description": "Mancala game web version",
+	"scripts": {
+		"start": "./node_modules/.bin/concurrently --kill-others --names tsc,esbuild.config.start.js \\\"./esbuild.config.start.js\\\"",
+		"build": "./node_modules/.bin/rimraf dist && ./esbuild.config.build.js"
+	},
+	"dependencies": {
+		"mancala-web-kotlin": "../build/productionLibrary",
+		"tslib": "2.4.1",
+		"uhtml": "3.0.1"
+	},
+	"keywords": [],
+	"author": "Jan Vladimir Mostert",
+	"license": "Proprietary",
+	"private": true,
+	"devDependencies": {
+		"concurrently": "^7.3.0",
+		"esbuild": "^0.15.5",
+		"rimraf": "^3.0.2",
+		"typescript": "^4.9.4"
+	}
+}
