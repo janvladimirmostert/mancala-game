@@ -2,6 +2,7 @@
 kotlin = "1.8.21"
 jvm-target = "19"
 mancala-game = "1.0.0"
+shadow = "7.1.2"
 
 kotlinCoroutines = "1.6.4"
 kotlinSerialization = "1.5.0"
