@@ -68,7 +68,7 @@ legal moves are: [0, 1, 2, 3, 4, 5]
 
 More intelligent bots can be added to the mancala-robot package.
 
-<img src="./docs/jvm-console.png">
+<img alt="JVM Console Screenshot" src="./docs/jvm-console.png">
 
 ### Web Game
 
@@ -133,11 +133,11 @@ found 0 vulnerabilities
 
 Open http://localhost:7777/ in your browser and start the game by entering some names:
 
-<img src="./docs/web-1.png">
+<img alt="WEB Version enter names Screenshot" src="./docs/web-1.png">
 
 Hit the START button:
 
-<img src="./docs/web-2.png">
+<img alt="WEB Version active game Screenshot" src="./docs/web-2.png">
 
 The bot mode is not enabled for the web version.
 
