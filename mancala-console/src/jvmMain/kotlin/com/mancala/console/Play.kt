@@ -52,7 +52,7 @@ object Play {
 		}
 
 		// read move input while game is not over
-		do {
+		while (game.isActive) {
 			printGame(game)
 
 			game.playerTurn?.also { player ->
@@ -71,7 +71,10 @@ object Play {
 
 			when (val result = game.move(move)) {
 				is Game.MoveResult.Success -> game = result.game
-				is Game.MoveResult.GameOver -> break
+				is Game.MoveResult.GameOver -> {
+					game = result.game
+					break
+				}
 				is Game.MoveResult.IllegalMoveError -> {
 					println("that move is not allowed, ${game.playerTurn?.name}")
 				}
@@ -80,7 +83,7 @@ object Play {
 					println("that cup has no stones to move, ${game.playerTurn?.name}")
 				}
 			}
-		} while (game.isActive)
+		}
 
 		// output game result
 		if (game.isOver) {
