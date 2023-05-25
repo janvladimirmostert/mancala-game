@@ -1,5 +1,7 @@
 plugins {
+	application
 	kotlin("multiplatform")
+	id("com.github.johnrengelman.shadow")
 }
 
 kotlin {
@@ -10,6 +12,8 @@ kotlin {
 		jvmToolchain {
 			languageVersion.set(JavaLanguageVersion.of(libs.versions.jvm.target.get()))
 		}
+		// only here to make shadowJar work
+		withJava()
 	}
 
 	sourceSets {
@@ -22,4 +26,8 @@ kotlin {
 			}
 		}
 	}
+}
+
+application {
+	mainClass.set("com.mancala.console.Play")
 }

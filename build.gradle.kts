@@ -2,7 +2,10 @@ val mancalaGameVersion = libs.versions.mancala.game.get()
 
 plugins {
 	val kotlinVersion = libs.versions.kotlin.get()
+	val shadowVersion = libs.versions.shadow.get()
+
 	kotlin("multiplatform").version(kotlinVersion).apply(false)
+	id("com.github.johnrengelman.shadow").version(shadowVersion).apply(false)
 }
 
 allprojects {
