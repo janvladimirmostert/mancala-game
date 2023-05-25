@@ -1,0 +1,57 @@
+@import "variables.css";
+@import "fonts.css";
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        ".      .      .     "
+        ".      main   .     "
+        ".      .      .     "
+        "footer footer footer"
+    ;
+    background-image: url("../img/french-stucco.png");
+    grid-template-rows: auto 1fr auto 1fr auto;
+
+    font-family: "Open Sans", serif;
+}
+
+header {
+    grid-area: header;
+    height: 4.5rem;
+    background-color: var(--color-background-bol-dot-com);
+    display: flex;
+    align-items: center;
+}
+
+header > .title {
+    font-size: 1.25rem;
+    font-weight: bolder;
+    color: var(--color-light);
+    margin: 1rem;
+    text-transform: uppercase;
+}
+
+main {
+    grid-area: main;
+    background-color: var(--color-primary-background);
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--color-dark);
+    border-radius: var(--radius);
+
+}
+
+footer {
+    height: 4.5rem;
+}
+
+input {
+
+
+
+}

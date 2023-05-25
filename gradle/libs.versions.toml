@@ -1,0 +1,29 @@
+[versions]
+kotlin = "1.8.21"
+jvm-target = "19"
+mancala-game = "1.0.0"
+
+kotlinCoroutines = "1.6.4"
+kotlinSerialization = "1.5.0"
+junit5 = "5.9.1"
+
+uhtml = "3.1.0"
+
+[plugins]
+
+[libraries]
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+kotlin-test-annotations-common = { module = "org.jetbrains.kotlin:kotlin-test-annotations-common", version.ref = "kotlin" }
+kotlin-test-common = { module = "org.jetbrains.kotlin:kotlin-test-common", version.ref = "kotlin" }
+kotlin-test-junit = { module = "org.jetbrains.kotlin:kotlin-test-junit", version.ref = "kotlin" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinCoroutines" }
+kotlinx-coroutines-jdk8 = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-jdk8", version.ref = "kotlinCoroutines" }
+kotlinx-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlinCoroutines" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinSerialization" }
+
+junit5 = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit5" }
+
+
+[bundles]
+kotlin-test-jvm = ["kotlin-test", "kotlin-test-annotations-common", "kotlin-test-junit", "junit5"]
+kotlin-test-common = ["kotlin-test", "kotlin-test-annotations-common"]
